@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Particles </title>
+        <script type = "text/javascript" src = "game.js"> </script>
+        <style>
+            html, body {
+                padding: 0;
+                margin: 0;
+                background: linear-gradient(to top left, black, darkgray);
+            }
+            body {
+                padding-bottom: 100px;
+            }
+            #canvas {
+                margin: auto auto;
+				margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 0;
+                display: block;
+                background-color: black;
+                border-radius: 23px;
+                box-shadow: 0 0 70px 2px rgba(0, 0, 0, 0.8);
+				overflow: hidden;
+                z-index: 20;
+            }
+            #container {
+                margin-bottom: 70px;
+            }
+            h5 {
+                font-family: sans-serif;
+				color: white;
+				font-size: 16px;
+                text-align: center;
+                margin-top: 50px;
+                letter-spacing: 4px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            }
+			p, span, #data {
+				font-family: sans-serif;
+				color: white;
+				font-size: 14px;
+                text-align: center;
+                margin: 0 20px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+			}
+			a {
+				color: blue;
+				text-decoration: none;
+			}
+            p {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        </style>
+    </head>
+    <body onload = "main()">
+        <div id = "container">
+            <canvas id = "canvas">
+                <p> Please install Google Chrome. </p>
+            </canvas>
+            <h5> CONTROLS </h5>
+            <p id = "controls"> 
+                <span style = "color: gold;"> GOLD - W A S D </span> | <span style = "color: aqua;"> AQUA - U H J K </span> | <span style = "color: lime;"> LIME - ARROW KEYS </span> | <span style = "color: violet;"> VIOLET - 8 4 5 6 [NUMPAD] </span>
+
+            <h5> HOW TO PLAY </h5>  
+            <p> Players must dodge the red projectiles and collect the white projects to reedem health points and clear the area. The aim of the game is to get the longest survival time possible - this especially becomes competitive when playing against multiple users. The time is displayed in the background. Player controls for each coloured player are listed below the game window. The hostile projectile count is shown on the lower end the game window; the first value represents the current number of projectiles, white the second value shows the cap - this increases over time, making the game become challenging as the game progresses. <br/><br/>Please use Google Chrome. Microsoft Edge is currently unsupported. </p>
+                
+            <br/><p> Sound effects were obtained from (<a href = "http://soundbible.com/" target = "_blank"> http://soundbible.com/ </a>)
+                
+            <br/> Music used: Beyond the Stars by Per Kiilstofte (<a href = "https://machinimasound.com/music/beyond-the-stars/" target = "_blank"> https://machinimasound.com/music/beyond-the-stars/ </a>)
+            <br/> Licensed under Creative Commons Attribution 4.0 International (<a href = "http://creativecommons.org/licenses/by/4.0/" target = "_blank"> http://creativecommons.org/licenses/by/4.0/ </a>) 
+
+        </div>
+    </body>
+</html>
