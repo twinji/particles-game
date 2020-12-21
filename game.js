@@ -19,7 +19,7 @@ function main() {
     
     bgMusic = new Audio();
     bgMusic.src = "audio/bgmusic.mp3";
-	bgMusic.volume = 0.6;
+	bgMusic.volume = 0.4;
     bgMusic.loop = true;
     bgMusic.play();
 
@@ -154,7 +154,7 @@ secondTimer = {
 		if (this.start) {
 			var d = new Date();
 			if (new Date().getSeconds().toFixed(0) !== this.s) {
-				bullets.bulletCap += 100;
+				bullets.bulletCap += 2;
                 if (players.playersArray.length !== 0) {
 				    this.time++;	
                 }
@@ -197,7 +197,7 @@ player = function(x, y, radius, color, spd, upKey, downKey, leftKey, rightKey) {
     players.playersArray.push(this);
     this.x = x;
     this.y = y;
-    this.maxHealth = 200;
+    this.maxHealth = 100;
     this.health = this.maxHealth;
     this.radius = radius;
     this.color = color;
@@ -319,7 +319,7 @@ bullet = function() {
     this.update = function() {
         this.x += this.spd;
         if (this.x > canvas.width + this.radius * 2) {
-            if (bullets.bulletsArray.length < bullets.bulletCap && players.playersArray.length > 0) bullets.create(100);
+            if (bullets.bulletsArray.length < bullets.bulletCap && players.playersArray.length > 0) bullets.create(2);
             this.generateRandomProperties();
         }
     };
