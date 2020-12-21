@@ -197,7 +197,7 @@ player = function(x, y, radius, color, spd, upKey, downKey, leftKey, rightKey) {
     players.playersArray.push(this);
     this.x = x;
     this.y = y;
-    this.maxHealth = 100;
+    this.maxHealth = 200;
     this.health = this.maxHealth;
     this.radius = radius;
     this.color = color;
@@ -319,7 +319,7 @@ bullet = function() {
     this.update = function() {
         this.x += this.spd;
         if (this.x > canvas.width + this.radius * 2) {
-            if (bullets.bulletsArray.length < bullets.bulletCap && players.playersArray.length > 0) bullets.create(10);
+            if (bullets.bulletsArray.length < bullets.bulletCap && players.playersArray.length > 0) bullets.create(100);
             this.generateRandomProperties();
         }
     };
