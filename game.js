@@ -154,7 +154,7 @@ secondTimer = {
 		if (this.start) {
 			var d = new Date();
 			if (new Date().getSeconds().toFixed(0) !== this.s) {
-				bullets.bulletCap += 2;
+				bullets.bulletCap += 100;
                 if (players.playersArray.length !== 0) {
 				    this.time++;	
                 }
