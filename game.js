@@ -319,7 +319,7 @@ bullet = function() {
     this.update = function() {
         this.x += this.spd;
         if (this.x > canvas.width + this.radius * 2) {
-            if (bullets.bulletsArray.length < bullets.bulletCap && players.playersArray.length > 0) bullets.create(2);
+            if (bullets.bulletsArray.length < bullets.bulletCap && players.playersArray.length > 0) bullets.create(10);
             this.generateRandomProperties();
         }
     };
